@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>robotino_gazebo_plugin</name>
+  <version>0.0.0</version>
+  <description>The robotino_gazebo_plugin package</description>
+
+
+  <author email="elia.bonetto@tuebingen.mpg.de">Elia Bonetto</author>
+  <maintainer email="elia.bonetto@tuebingen.mpg.de">Elia Bonetto</maintainer>
+  <license>GPLv3</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>roscpp</run_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- You can specify that this package is a metapackage here: -->
+    <!-- <metapackage/> -->
+
+    <!-- Other tools can request additional information be placed here -->
+
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+
+  </export>
+</package>
