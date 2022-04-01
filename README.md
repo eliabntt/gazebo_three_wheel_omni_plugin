@@ -1,8 +1,7 @@
-# gazebo_thre_wheel_omni_plugin
-
-A plugin for Gazebo to control a three-wheeled omnidirectional robot. 
+# A plugin to control 3-wheels omnidirectional robot in gazebo
 
 This plugin was developed due to the lack of control availability for such kind of robots. 
+It will take velocity commands and translate that to realistic movement of the platform, with odometry (with or without noise) and producing the whole TF tree and correct transformations in the environment.
 
 Although developed in a rush, it should have all the topics/information exposed as ros parameters/args.
 
